@@ -1,4 +1,4 @@
-# RideSphinx Theme
+# Ride Sphinx Theme
 
 Sphinx theme for [Ride Docs](https://ride.readthedocs.io/en/latest/) based on the [Read the Docs Sphinx Theme](https://sphinx-rtd-theme.readthedocs.io/en/latest).
 
