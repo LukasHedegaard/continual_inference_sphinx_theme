@@ -10,7 +10,11 @@ Run python setup:
 python setup.py install
 ```
 
-and install the dependencies using `pip install -r docs/requirements.txt`
+and install the dependencies using
+
+```
+pip install -r docs/requirements.txt
+```
 
 In the root directory install the `package.json`:
 
@@ -24,6 +28,13 @@ If you have `npm` installed then run:
 
 ```
 npm install
+```
+
+Check that Ruby is installed and install `sass` 
+
+```
+ruby -v 
+gem install sass
 ```
 
 - If you want to see generated documentation for `docs/demo` then create
@@ -91,10 +102,10 @@ Once that is successful commit the change to Github.
 
 ### Developing locally against PyTorch Docs and Tutorials
 
-To be able to modify and preview the theme locally against the Ride Docs and/or the Ride Tutorials first clone the repositories:
+To be able to modify and preview the theme locally against the PyTorch Docs and/or the PyTorch Tutorials first clone the repositories:
 
-- [Ride (Docs)](https://github.com/pytorch/pytorch)
-- [Ride Tutorials](https://github.com/pytorch/tutorials)
+- [PyTorch (Docs)](https://github.com/pytorch/pytorch)
+- [PyTorch Tutorials](https://github.com/pytorch/tutorials)
 
 Then follow the instructions in each repository to make the docs.
 
