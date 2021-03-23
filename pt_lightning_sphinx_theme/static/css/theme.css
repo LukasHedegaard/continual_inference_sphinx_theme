@@ -10307,6 +10307,7 @@ ul.pytorch-breadcrumbs a {
 
 .tutorials-header .header-logo {
   background-image: url("../images/logo.svg");
+  float: left;
 }
 .tutorials-header .main-menu ul li a {
   color: #262626;
