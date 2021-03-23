@@ -1,6 +1,6 @@
 """Pytorch Lightning Sphinx theme.
 
-From https://github.com/shiftlab/lightning_sphinx_theme.
+From https://github.com/shiftlab/ride_sphinx_theme.
 
 """
 from os import path

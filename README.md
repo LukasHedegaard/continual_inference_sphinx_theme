@@ -1,6 +1,6 @@
-# PyTorch-Lightning Sphinx Theme
+# RideSphinx Theme
 
-Sphinx theme for [PyTorch-Lightning Docs](https://pytorch-lightning.readthedocs.io/en/latest/) based on the [Read the Docs Sphinx Theme](https://sphinx-rtd-theme.readthedocs.io/en/latest).
+Sphinx theme for [Ride Docs](https://ride.readthedocs.io/en/latest/) based on the [Read the Docs Sphinx Theme](https://sphinx-rtd-theme.readthedocs.io/en/latest).
 
 ## Local Development
 
@@ -71,7 +71,7 @@ When you are ready to submit a PR with your changes you can first test that your
 
 1. Run the `grunt build` task on your branch and commit the build to Github.
 2. In your local docs or tutorials repo, remove any existing `ride_sphinx_theme` packages in the `src` folder (there should be a `pip-delete-this-directory.txt` file there)
-3. In `requirements.txt` replace the existing git link with a link pointing to your commit or branch, e.g. `-e git+git://github.com/{ your repo }/lightning_sphinx_theme.git@{ your commit hash }#egg=ride_sphinx_theme`
+3. In `requirements.txt` replace the existing git link with a link pointing to your commit or branch, e.g. `-e git+git://github.com/{ your repo }/ride_sphinx_theme.git@{ your commit hash }#egg=ride_sphinx_theme`
 4. Install the requirements `pip install -r requirements.txt`
 5. Remove the current build. In the docs this is `make clean`, tutorials is `make clean-cache`
 6. Build the static site. In the docs this is `make html`, tutorials is `make html-noplot`
@@ -91,10 +91,10 @@ Once that is successful commit the change to Github.
 
 ### Developing locally against PyTorch Docs and Tutorials
 
-To be able to modify and preview the theme locally against the PyTorch Lightning Docs and/or the PyTorch Lightning Tutorials first clone the repositories:
+To be able to modify and preview the theme locally against the Ride Docs and/or the Ride Tutorials first clone the repositories:
 
-- [PyTorch Lightning (Docs)](https://github.com/pytorch/pytorch)
-- [PyTorch Lightning Tutorials](https://github.com/pytorch/tutorials)
+- [Ride (Docs)](https://github.com/pytorch/pytorch)
+- [Ride Tutorials](https://github.com/pytorch/tutorials)
 
 Then follow the instructions in each repository to make the docs.
 
@@ -120,7 +120,7 @@ In `conf.py` change the html theme to `ride_sphinx_theme` and point the html the
 
 ```
 html_theme = 'ride_sphinx_theme'
-html_theme_path = ["../../../lightning_sphinx_theme"]
+html_theme_path = ["../../../ride_sphinx_theme"]
 ```
 
 Next create a file `.env.json` in the root of this repo with some keys/values referencing the local folders of the Docs and Tutorials repos:
@@ -128,7 +128,7 @@ Next create a file `.env.json` in the root of this repo with some keys/values re
 ```
 {
   "TUTORIALS_DIR": "../tutorials",
-  "DOCS_DIR": "../pytorch_lightning/docs/source"
+  "DOCS_DIR": "../ride/docs/source"
 }
 
 ```

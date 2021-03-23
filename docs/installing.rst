@@ -7,7 +7,7 @@ Via Git or Download
 ===================
 
 Symlink or subtree the ``ride_sphinx_theme`` repository into your documentation at
-``docs/_themes/lightning_sphinx_theme`` then add the following two settings to your Sphinx
+``docs/_themes/ride_sphinx_theme`` then add the following two settings to your Sphinx
 ``conf.py`` file:
 
 .. code:: python
