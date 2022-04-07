@@ -2,7 +2,7 @@ import os
 
 from setuptools import setup
 from io import open
-from ride_sphinx_theme import __version__
+from continual_sphinx_theme import __version__
 
 
 def package_files(directory: str):
@@ -33,26 +33,28 @@ def package_files(directory: str):
 
 
 setup(
-    name="ride_sphinx_theme",
+    name="continual_sphinx_theme",
     version=__version__,
     author="Lukas Hedegaard",
     author_email="lukasxhedegaard@gmail.com",
-    url="https://github.com/LukasHedegaard/ride_sphinx_theme",
-    docs_url="https://github.com/LukasHedegaard/ride_sphinx_theme",
+    url="https://github.com/LukasHedegaard/continual_sphinx_theme",
+    docs_url="https://github.com/LukasHedegaard/continual_sphinx_theme",
     description="Ride Sphinx Theme",
-    py_modules=["ride_sphinx_theme"],
-    packages=["ride_sphinx_theme"],
+    py_modules=["continual_sphinx_theme"],
+    packages=["continual_sphinx_theme"],
     include_package_data=True,
     zip_safe=False,
     package_data={
-        "ride_sphinx_theme": [
+        "continual_sphinx_theme": [
             "theme.conf",
             "*.html",
             "theme_variables.jinja",
-            *package_files("ride_sphinx_theme/static"),
+            *package_files("continual_sphinx_theme/static"),
         ]
     },
-    entry_points={"sphinx.html_themes": ["ride_sphinx_theme = ride_sphinx_theme",]},
+    entry_points={
+        "sphinx.html_themes": ["continual_sphinx_theme = continual_sphinx_theme",]
+    },
     license="MIT License",
     classifiers=[
         "Development Status :: 5 - Production/Stable",

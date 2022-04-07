@@ -1,8 +1,3 @@
-"""Pytorch Lightning Sphinx theme.
-
-From https://github.com/shiftlab/ride_sphinx_theme.
-
-"""
 from os import path
 
 __version__ = "0.0.27"
@@ -17,4 +12,4 @@ def get_html_theme_path():
 
 # See http://www.sphinx-doc.org/en/stable/theming.html#distribute-your-theme-as-a-python-package
 def setup(app):
-    app.add_html_theme("ride_sphinx_theme", path.abspath(path.dirname(__file__)))
+    app.add_html_theme("continual_sphinx_theme", path.abspath(path.dirname(__file__)))

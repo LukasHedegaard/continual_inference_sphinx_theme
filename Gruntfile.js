@@ -40,7 +40,7 @@ module.exports = function(grunt) {
               expand: true,
               flatten: true,
               src: ['fonts/FreightSans/*'],
-              dest: 'ride_sphinx_theme/static/fonts/FreightSans',
+              dest: 'continual_sphinx_theme/static/fonts/FreightSans',
               filter: 'isFile'
           },
 
@@ -48,7 +48,7 @@ module.exports = function(grunt) {
               expand: true,
               flatten: true,
               src: ['fonts/IBMPlexMono/*'],
-              dest: 'ride_sphinx_theme/static/fonts/IBMPlexMono',
+              dest: 'continual_sphinx_theme/static/fonts/IBMPlexMono',
               filter: 'isFile'
           }
         ]
@@ -60,7 +60,7 @@ module.exports = function(grunt) {
               expand: true,
               flatten: true,
               src: ['images/*'],
-              dest: 'ride_sphinx_theme/static/images',
+              dest: 'continual_sphinx_theme/static/images',
               filter: 'isFile'
           }
         ]
@@ -84,7 +84,7 @@ module.exports = function(grunt) {
               'node_modules/bootstrap/dist/js/bootstrap.min.js',
               'node_modules/anchor-js/anchor.min.js'
             ],
-            dest: 'ride_sphinx_theme/static/js/vendor',
+            dest: 'continual_sphinx_theme/static/js/vendor',
             filter: 'isFile'
           }
         ]
@@ -100,7 +100,7 @@ module.exports = function(grunt) {
           expand: true,
           cwd: 'scss',
           src: ['*.scss'],
-          dest: 'ride_sphinx_theme/static/css',
+          dest: 'continual_sphinx_theme/static/css',
           ext: '.css'
         }]
       },
@@ -112,7 +112,7 @@ module.exports = function(grunt) {
           expand: true,
           cwd: 'scss',
           src: ['*.scss'],
-          dest: 'ride_sphinx_theme/static/css',
+          dest: 'continual_sphinx_theme/static/css',
           ext: '.css'
         }]
       }
@@ -128,7 +128,7 @@ module.exports = function(grunt) {
 
       dist: {
         files: {
-          "ride_sphinx_theme/static/css/theme.css": "ride_sphinx_theme/static/css/theme.css"
+          "continual_sphinx_theme/static/css/theme.css": "continual_sphinx_theme/static/css/theme.css"
         }
       }
     },
@@ -142,7 +142,7 @@ module.exports = function(grunt) {
           }
         },
         src: ['js/*.js'],
-        dest: 'ride_sphinx_theme/static/js/theme.js'
+        dest: 'continual_sphinx_theme/static/js/theme.js'
       },
       build: {
         options: {
@@ -152,7 +152,7 @@ module.exports = function(grunt) {
           }
         },
         src: ['js/*.js'],
-        dest: 'ride_sphinx_theme/static/js/theme.js'
+        dest: 'continual_sphinx_theme/static/js/theme.js'
       }
     },
     uglify: {
@@ -166,8 +166,8 @@ module.exports = function(grunt) {
         },
         files: [{
           expand: true,
-          src: ['ride_sphinx_theme/static/js/*.js', '!ride_sphinx_theme/static/js/*.min.js'],
-          dest: 'ride_sphinx_theme/static/js/',
+          src: ['continual_sphinx_theme/static/js/*.js', '!continual_sphinx_theme/static/js/*.min.js'],
+          dest: 'continual_sphinx_theme/static/js/',
           rename: function (dst, src) {
             // Use unminified file name for minified file
             return src;
@@ -182,10 +182,10 @@ module.exports = function(grunt) {
     },
     clean: {
       build: ["docs/build"],
-      fonts: ["ride_sphinx_theme/static/fonts"],
-      images: ["ride_sphinx_theme/static/images"],
-      css: ["ride_sphinx_theme/static/css"],
-      js: ["ride_sphinx_theme/static/js/*", "!ride_sphinx_theme/static/js/modernizr.min.js"]
+      fonts: ["continual_sphinx_theme/static/fonts"],
+      images: ["continual_sphinx_theme/static/images"],
+      css: ["continual_sphinx_theme/static/css"],
+      js: ["continual_sphinx_theme/static/js/*", "!continual_sphinx_theme/static/js/modernizr.min.js"]
     },
 
     watch: {
@@ -196,7 +196,7 @@ module.exports = function(grunt) {
       },
       /* Changes in theme dir rebuild sphinx */
       sphinx: {
-        files: ['ride_sphinx_theme/**/*', 'README.rst', 'docs/**/*.rst', 'docs/**/*.py'],
+        files: ['continual_sphinx_theme/**/*', 'README.rst', 'docs/**/*.rst', 'docs/**/*.py'],
         tasks: ['clean:build','exec:build_sphinx']
       },
       /* JavaScript */
